@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f2f4f7;
+  color: #222222;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #24527a;
+  color: white;
+  padding: 24px;
+  text-align: center;
+}
+
+header h1 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+nav a {
+  background-color: white;
+  color: #24527a;
+  padding: 8px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+nav a:hover {
+  background-color: #dceaf5;
+  opacity: 0.9;
+}
+
+main {
+  width: 90%;
+  max-width: 850px;
+  margin: 24px auto;
+  padding: 10px;
+}
+
+section,
+article,
+main > div {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dddddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px #cccccc;
+}
+
+h2 {
+  margin-top: 0;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #24527a;
+  text-transform: capitalize;
+}
+
+h3 {
+  color: #24527a;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 12px 0;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+ul,
+ol {
+  padding-left: 28px;
+  list-style-position: outside;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+blockquote {
+  margin-left: 0;
+  padding-left: 15px;
+  border-left: 4px solid #24527a;
+  font-style: italic;
+}
+
+table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+caption {
+  padding: 8px;
+  font-weight: bold;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #777777;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: break-word;
+}
+
+th {
+  background-color: #dceaf5;
+}
+
+footer {
+  background-color: #24527a;
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 18px 10px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    width: 100%;
+  }
+
+  main {
+    width: 96%;
+    margin-top: 12px;
+    padding: 4px;
+  }
+
+  section,
+  article,
+  main > div {
+    padding: 14px;
+  }
+}
